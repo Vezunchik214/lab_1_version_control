@@ -1,0 +1,46 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewData["Title"] = "Головна сторінка";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Персонажі Jujutsu Kaisen</h1> 
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/GojoSatoru.jpg" class="card-img-top" alt="Зображення 1">
+                <div class="card-body">
+                    <h5 class="card-title">Годжо Сатору</h5>
+                    <p class="card-text">Один із головних персонажів. Гордість Сім'ї Годжо, перша за чотириста років людина, яка успадкувала і Безмежність, і Шість Очей. Працює викладачем у Токійській школі магії та використовує свій вплив для навчання сильних молодих союзників.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/Sukuna.jpg" class="card-img-top" alt="Зображення 2">
+                <div class="card-body">
+                    <h5 class="card-title">Рьомен Сукуна</h5>
+                    <p class="card-text">Найсильніший маг тисячолітньої давності, Король Прокляття та один із головних атогоністів Jujutsu Kaisen. Після смерті Сукуни, шамани розділили його тіло, та залишили тільки пальці, розкидавши їх по світу у вигляді проклятих предметів особливого рівня.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="images/kenjaku.jpg" class="card-img-top" alt="Зображення 3">
+                <div class="card-body">
+                    <h5 class="card-title">Кендзяку</h5>
+                    <p class="card-text">Один із головних антагоністів. Є найдавнішим шаманом, який має на меті «еволюціонування» людства за допомогою проклятої енергії, тим самим відкриваючи новий золотий вік шаманів. Використовує прокляту техніку, яка дозволяє йому пересаджувати свій мозок у різні тіла.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row mt-5 text-center">
+                <div class="col">
+                    <a asp-controller="Resolve" asp-action="Show" class="btn btn-success btn-lg">Перейти на сторінку Resolve</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
